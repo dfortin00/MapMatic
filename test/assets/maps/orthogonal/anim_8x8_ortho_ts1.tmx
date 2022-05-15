@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="3" nextobjectid="2">
+ <editorsettings>
+  <export target="anim_8x8_ortho_ts1.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="world_tileset" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="../../world_tileset.png" width="128" height="128"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="300"/>
+    <frame tileid="33" duration="300"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="background" width="8" height="8">
+  <data encoding="csv">
+1,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="entities">
+  <object id="1" gid="1" x="16" y="16" width="16" height="16"/>
+ </objectgroup>
+</map>

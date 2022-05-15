@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="44">
+ <editorsettings>
+  <export target="object_10x10_ts1.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="world_tileset" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="../../world_tileset.png" width="128" height="128"/>
+  <tile id="0">
+   <objectgroup draworder="index" id="2">
+    <object id="1" name="tile_object" x="0" y="0" width="16" height="16"/>
+   </objectgroup>
+  </tile>
+  <tile id="33">
+   <animation>
+    <frame tileid="33" duration="500"/>
+    <frame tileid="57" duration="500"/>
+   </animation>
+  </tile>
+ </tileset>
+ <objectgroup id="2" name="object_layer_1" visible="0">
+  <object id="1" name="object_1" x="16" y="16" width="16" height="16"/>
+  <object id="6" name="object_2" x="0" y="0" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup draworder="index" id="3" name="object_layer_2" visible="0" offsetx="10" offsety="20">
+  <object id="4" name="object_3" x="48" y="48" width="16" height="16"/>
+  <object id="7" name="object_4" x="32" y="32" width="16" height="16"/>
+  <object id="39" name="elli" x="80" y="64" width="16" height="16">
+   <ellipse/>
+  </object>
+  <object id="40" name="poly" x="32" y="80">
+   <polygon points="0,0 0,16 16,32 16,0 0,0"/>
+  </object>
+  <object id="41" name="pline" x="64" y="96">
+   <polyline points="0,0 16,16"/>
+  </object>
+  <object id="42" name="p" x="96" y="32">
+   <point/>
+  </object>
+  <object id="43" name="tileobject" gid="1" x="112" y="64" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="4" name="object_layer_3">
+  <properties>
+   <property name="layer_prop" value="test layer value"/>
+  </properties>
+  <object id="8" name="rect" type="TestType" x="0" y="64" width="16" height="32">
+   <properties>
+    <property name="extra_prop" value="test value"/>
+   </properties>
+  </object>
+  <object id="9" name="rect_w_rotation" x="32" y="64" width="22.6274" height="22.6274" rotation="45"/>
+  <object id="10" name="poly" x="64" y="16">
+   <polygon points="0,0 -16,16 0,32 0,48 16,48 16,32 32,16 16,0"/>
+  </object>
+  <object id="12" name="elli" x="64" y="80" width="16" height="32">
+   <ellipse/>
+  </object>
+  <object id="13" name="elli_w_rotation" x="112" y="80" width="16" height="32" rotation="90">
+   <ellipse/>
+  </object>
+  <object id="14" name="poly_w_rotation" x="128" y="16" rotation="45">
+   <polygon points="0,0 -16,16 0,32 0,48 16,48 16,32 32,16 16,0"/>
+  </object>
+  <object id="20" name="p" x="128" y="96">
+   <point/>
+  </object>
+  <object id="22" name="pline" x="16" y="128">
+   <polyline points="0,0 16,16 32,0 48,16"/>
+  </object>
+  <object id="23" name="pline_w_rotation" x="96" y="112" rotation="90">
+   <polyline points="0,0 16,16 32,0 48,16"/>
+  </object>
+  <object id="24" name="tileobject1" gid="34" x="112" y="144" width="16" height="16"/>
+  <object id="25" name="tileobject2" gid="3221225506" x="128" y="144" width="16" height="16" rotation="45"/>
+  <object id="36" name="tile_no_anim" gid="8" x="16" y="160" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="5" name="object_layer_4">
+  <object id="27" name="objectname" x="16" y="16" width="16" height="16"/>
+  <object id="28" name="notobjectname" x="48" y="32">
+   <point/>
+  </object>
+  <object id="29" name="objectname" x="80" y="16" width="16" height="16">
+   <ellipse/>
+  </object>
+  <object id="30" name="objectname" x="112" y="16">
+   <polygon points="0,0 16,16 32,0 0,0"/>
+  </object>
+  <object id="31" name="objectname" x="16" y="48">
+   <polyline points="0,0 32,0"/>
+  </object>
+  <object id="32" name="objectname" gid="24" x="64" y="64" width="16" height="16"/>
+  <object id="33" name="notobjectname" gid="24" x="96" y="64" width="16" height="16"/>
+  <object id="34" name="rect_invisible" x="32" y="80" width="16" height="32" visible="0"/>
+  <object id="35" name="rect_visible" x="16" y="80" width="16" height="32"/>
+ </objectgroup>
+ <objectgroup id="6" name="object_layer_5">
+  <object id="38" x="48" y="80" width="16" height="16"/>
+ </objectgroup>
+</map>

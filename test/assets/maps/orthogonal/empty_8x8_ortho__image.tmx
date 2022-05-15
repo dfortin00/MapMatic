@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+ <editorsettings>
+  <export target="empty_8x8_ortho__image.lua" format="lua"/>
+ </editorsettings>
+ <imagelayer id="8" name="repeatxy_true" repeatx="1" repeaty="1">
+  <image source="../../back.png" width="16" height="16"/>
+ </imagelayer>
+ <imagelayer id="2" name="image_layer">
+  <image source="../../image_layer_bkgrd.png" width="128" height="128"/>
+ </imagelayer>
+ <imagelayer id="3" name="image_layer_no_image"/>
+ <imagelayer id="5" name="repeatxy_false">
+  <image source="../../arena_background.png" width="640" height="360"/>
+ </imagelayer>
+ <imagelayer id="4" name="repeatx_true" repeatx="1">
+  <image source="../../cave_drake.png" width="128" height="64"/>
+ </imagelayer>
+ <imagelayer id="6" name="repeaty_true" repeaty="1">
+  <image source="../../cave_shade.png" width="64" height="64"/>
+ </imagelayer>
+</map>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="5" height="5" tilewidth="16" tileheight="16" infinite="0" nextlayerid="10" nextobjectid="55">
+ <editorsettings>
+  <export target="object_layer_5x5__layers.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="56" columns="14">
+  <image source="../../../tiles.png" width="224" height="64"/>
+ </tileset>
+ <objectgroup draworder="index" id="7" name="object_layer__collidable=true">
+  <properties>
+   <property name="box2d_collidable" type="bool" value="true"/>
+  </properties>
+  <object id="27" x="0" y="0" width="16" height="17" rotation="45">
+   <properties>
+    <property name="box2d_collidable" type="bool" value="true"/>
+   </properties>
+  </object>
+  <object id="30" x="32" y="16">
+   <point/>
+  </object>
+  <object id="31" x="64" y="0" width="16" height="17" rotation="45">
+   <ellipse/>
+  </object>
+  <object id="53" x="0" y="48" rotation="45">
+   <properties>
+    <property name="box2d_collidable" type="bool" value="false"/>
+   </properties>
+   <polyline points="0,0 16,-16"/>
+  </object>
+  <object id="33" x="32" y="48" rotation="45">
+   <polyline points="0,0 0,-16 16,-16"/>
+  </object>
+  <object id="34" x="64" y="32" rotation="45">
+   <polygon points="0,0 0,32 16,16 16,0"/>
+  </object>
+  <object id="35" gid="29" x="0" y="80" width="16" height="16" rotation="45"/>
+ </objectgroup>
+ <objectgroup id="8" name="object_layer__collidable=false" visible="0">
+  <properties>
+   <property name="box2d_collidable" type="bool" value="false"/>
+  </properties>
+  <object id="36" x="0" y="0" width="16" height="16"/>
+  <object id="37" x="32" y="16">
+   <point/>
+  </object>
+  <object id="38" x="64" y="0" width="16" height="16">
+   <ellipse/>
+  </object>
+  <object id="51" x="0" y="48">
+   <polyline points="0,0 16,-16"/>
+  </object>
+  <object id="40" x="32" y="48">
+   <polyline points="0,0 0,-16 16,-16"/>
+  </object>
+  <object id="41" x="64" y="32">
+   <polygon points="0,0 0,32 16,16 16,0"/>
+  </object>
+  <object id="42" gid="29" x="0" y="80" width="16" height="16"/>
+ </objectgroup>
+ <objectgroup id="9" name="object_layer__no_collidable" visible="0">
+  <object id="43" x="0" y="0" width="16" height="16"/>
+  <object id="44" x="32" y="16">
+   <point/>
+  </object>
+  <object id="45" x="64" y="0" width="16" height="16">
+   <ellipse/>
+  </object>
+  <object id="50" x="0" y="48">
+   <polyline points="0,0 16,-16"/>
+  </object>
+  <object id="47" x="32" y="48">
+   <polyline points="0,0 0,-16 16,0"/>
+  </object>
+  <object id="48" x="64" y="32">
+   <polygon points="0,0 0,32 16,16 16,0"/>
+  </object>
+  <object id="49" gid="29" x="0" y="80" width="16" height="16"/>
+ </objectgroup>
+</map>

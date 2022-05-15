@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="left-up" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="2" nextobjectid="1">
+ <editorsettings>
+  <export target="renderorder_lu_10x10_ortho_ts2_tc1.lua" format="lua"/>
+ </editorsettings>
+ <tileset firstgid="1" name="world_tileset_16x16" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <image source="../../world_tileset.png" width="128" height="128"/>
+ </tileset>
+ <tileset firstgid="65" name="tmw_desert_spacing" tilewidth="32" tileheight="32" spacing="1" margin="1" tilecount="48" columns="8">
+  <image source="../../tmw_desert_spacing.png" width="265" height="199"/>
+ </tileset>
+ <tileset firstgid="113" name="collection" tilewidth="81" tileheight="76" tilecount="4" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <tile id="0">
+   <image width="16" height="16" source="../../back.png"/>
+  </tile>
+  <tile id="1">
+   <image width="15" height="15" source="../../bpanel.png"/>
+  </tile>
+  <tile id="2">
+   <image width="81" height="76" source="../../mage_portrait.png"/>
+  </tile>
+  <tile id="3">
+   <image width="81" height="76" source="../../portrait.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="tile_layer" width="10" height="10">
+  <data encoding="csv">
+65,24,24,24,24,24,24,24,24,79,
+24,24,24,24,24,24,24,24,24,24,
+24,24,24,24,24,24,24,24,24,24,
+24,24,24,24,24,24,24,24,24,24,
+24,116,24,24,24,24,24,24,24,24,
+24,24,24,24,24,24,24,24,24,24,
+24,24,24,24,24,24,24,24,24,24,
+24,24,24,24,115,24,24,24,24,24,
+24,24,24,24,24,24,24,24,24,24,
+84,24,24,24,24,24,24,24,24,112
+</data>
+ </layer>
+</map>

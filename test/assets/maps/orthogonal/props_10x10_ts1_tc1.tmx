@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.6.0" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="5" nextobjectid="7">
+ <editorsettings>
+  <export target="props_10x10_ts1_tc1.lua" format="lua"/>
+ </editorsettings>
+ <properties>
+  <property name="map_bool_prop" type="bool" value="false"/>
+  <property name="map_color_prop" type="color" value="#ff55ff00"/>
+  <property name="map_file_prop" type="file" value="../../mage_portrait.png"/>
+  <property name="map_float_prop" type="float" value="1.4"/>
+  <property name="map_int_prop" type="int" value="2"/>
+  <property name="map_object_prop" type="object" value="1"/>
+  <property name="map_string_prop" value="map string value"/>
+ </properties>
+ <tileset firstgid="1" name="world_tileset" tilewidth="16" tileheight="16" tilecount="64" columns="8">
+  <properties>
+   <property name="tileset_prop" value="tileset value"/>
+  </properties>
+  <image source="../../world_tileset.png" width="128" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="ts_tile_prop" value="tileset tile value"/>
+   </properties>
+  </tile>
+ </tileset>
+ <tileset firstgid="65" name="collection_ts" tilewidth="81" tileheight="76" tilecount="3" columns="0">
+  <grid orientation="orthogonal" width="1" height="1"/>
+  <properties>
+   <property name="tile_collection_prop" value="tile collection value"/>
+  </properties>
+  <tile id="0">
+   <properties>
+    <property name="tc_tile_prop" value="tile collection tile value"/>
+   </properties>
+   <image width="16" height="16" source="../../back.png"/>
+  </tile>
+  <tile id="1">
+   <image width="15" height="15" source="../../bpanel.png"/>
+  </tile>
+  <tile id="2">
+   <image width="81" height="76" source="../../portrait.png"/>
+  </tile>
+ </tileset>
+ <layer id="1" name="tile_layer" width="10" height="10">
+  <properties>
+   <property name="tile_layer_prop" value="tile layer value"/>
+  </properties>
+  <data encoding="csv">
+1,0,0,0,0,0,0,0,0,0,
+0,1,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="object_layer">
+  <properties>
+   <property name="object_layer_prop" value="object layer value"/>
+  </properties>
+  <object id="1" name="cave_object" gid="47" x="16" y="32" width="16" height="16">
+   <properties>
+    <property name="tile_object_prop" value="tile object value"/>
+   </properties>
+  </object>
+  <object id="2" name="rect" x="48" y="16" width="16" height="16">
+   <properties>
+    <property name="rect_object_prop" value="rectangle object value"/>
+   </properties>
+  </object>
+  <object id="3" name="point" x="80" y="32">
+   <properties>
+    <property name="point_object_prop" value="point object value"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="4" name="ellipse" x="112" y="16" width="16" height="16">
+   <properties>
+    <property name="ellipse_object_prop" value="ellipse object value"/>
+   </properties>
+   <ellipse/>
+  </object>
+  <object id="5" name="polygon" x="144" y="32">
+   <properties>
+    <property name="polygon_object_prop" value="polygon object value"/>
+   </properties>
+   <polygon points="0,0 0,-16 16,-16"/>
+  </object>
+  <object id="6" name="polyline" x="96" y="16">
+   <properties>
+    <property name="polyline_object_prop" value="polyline object value"/>
+   </properties>
+   <polyline points="0,0 0,16"/>
+  </object>
+ </objectgroup>
+ <imagelayer id="3" name="image_layer">
+  <properties>
+   <property name="image_layer_prop" value="image layer value"/>
+  </properties>
+ </imagelayer>
+ <group id="4" name="group_layer">
+  <properties>
+   <property name="group_layer_prop" value="group layer value"/>
+  </properties>
+ </group>
+</map>
