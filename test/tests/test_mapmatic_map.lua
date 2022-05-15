@@ -734,7 +734,7 @@ TestMapMaticMap = {}
     function TestMapMaticMap:test_mapmatic_map_get_layers__grouped__group_layer__number()
         local map = MapFactory(layers_8x8_ortho)
         local list = map:getLayers(true)
-        lu.assertEquals(#list.groups, 2)
+        lu.assertEquals(#list.groups, 3)
     end
 
     function TestMapMaticMap:test_mapmatic_map_get_layers__grouped__group_layer__order()
@@ -746,44 +746,8 @@ TestMapMaticMap = {}
         lu.assertEquals(list.groups, {
             group,
             map:getLayer("child_group_layer", group),
+            map:getLayer("empty_group")
         })
-    end
-
-    function TestMapMaticMap:test_mapmatic_map_get_layers__grouped__custom_layer()
-        local map = MapFactory(layers_8x8_ortho)
-        local plugin = map:loadPlugin("ModifyMap")
-
-        local group = map:getLayer("group_layer")
-        plugin:addCustomLayer("custom_layer_1")
-        plugin:addCustomLayer("custom_layer_1", 1, group)
-
-        local list = map:getLayers(true)
-        lu.assertNotIsNil(list.customs)
-    end
-
-    function TestMapMaticMap:test_mapmatic_map_get_layers__grouped__group_layer__number()
-        local map = MapFactory(layers_8x8_ortho)
-        local plugin = map:loadPlugin("ModifyMap")
-
-        local group = map:getLayer("group_layer")
-        plugin:addCustomLayer("custom_layer_1")
-        plugin:addCustomLayer("custom_layer_2", 1, group)
-
-        local list = map:getLayers(true)
-        lu.assertEquals(#list.customs, 2)
-    end
-
-    function TestMapMaticMap:test_mapmatic_map_get_layers__grouped__group_layer__order()
-        local map = MapFactory(layers_8x8_ortho)
-        local plugin = map:loadPlugin("ModifyMap")
-
-        local group = map:getLayer("group_layer")
-        local layer1 = plugin:addCustomLayer("custom_layer_1", 1)
-        local layer2 = plugin:addCustomLayer("custom_layer_2", 1, group)
-
-        local list = map:getLayers(true)
-
-        lu.assertEquals(list.customs, {layer1, layer2})
     end
 
     --[[ Map:hasLayer ]]
