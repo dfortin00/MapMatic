@@ -13,6 +13,7 @@ Tiled maps must be exported into the project as a .LUA file.
 local MapFactory = require("mapmatic")
 local map
 local mapx
+local world
 
 function love.load()
     map = MapFactory("maps/small_map")
@@ -22,6 +23,7 @@ function love.load()
     map:getLayer("backgrounds.background"):setRepeatX(true)
 
     -- Requires the Box2D plugin in the mapmatic/plugins folder
+    world = love.phyics.newWorld(0, 0)
     map:loadPlugin("Box2D", world)
 
     mapx = 0
@@ -39,6 +41,7 @@ function love.update(dt)
         mapx = map:getMapWidth() - 640
     end
 
+    world:update(dt)
     map:update(dt)
 end
 
