@@ -4,7 +4,7 @@ assert(love.getVersion() >= 11, 'MapMatic library requires LOVE2D version 11.0+'
 local MapFactory = {
     __name        = "MapMatic",
     __version     = '0.1.0',
-    __license     = "MIT/X11",
+    __license     = "GNU GPLv3",
     __description = "A LOVE2D library for rendering and controlling tile maps created with the Tiled application",
     __cache       = {},
 }

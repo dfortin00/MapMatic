@@ -22,7 +22,7 @@ TestMapMaticInit = {}
     end
 
     function TestMapMaticInit:test_mapmatic_init_map_factory__license()
-        lu.assertEquals(MapFactory:license(), "MIT/X11")
+        lu.assertEquals(MapFactory:license(), "GNU GPLv3")
     end
 
     function TestMapMaticInit:test_mapmatic_init_map_factory__description()

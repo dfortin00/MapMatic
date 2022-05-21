@@ -28,7 +28,7 @@ local PluginTemplate = Class {
     __name        = "PluginTemplate",
     __includes    = PluginBase,
     __version     = "1.0.0",
-    __license     = "MIT/X11",
+    __license     = "GNU GPLv3",
     __description = "Basic plugin template"
 }
 
